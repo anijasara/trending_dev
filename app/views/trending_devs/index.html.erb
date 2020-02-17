@@ -14,4 +14,18 @@
 
 <h1>TrendingDevs!!</h1>
 
-<p><%=@trending_devs %></p>
+<%@trending_devs.each do |proj| %>
+  <div>Author : <%= proj["author"]%></div>
+  <div>Name : <%= proj["name"]%></div>
+  <div>Avatar : <%= proj["avatar"]%></div>
+  <div>Language : <%= proj["language"]%></div>
+  <div>Url : <%= proj["url"]%></div>
+  <div>Stars : <%= proj["stars"]%>
+  <div>Description : <%= proj["description"]%></div>
+  <div>Built by:
+    <%proj["builtBy"].each do |author|%>
+      <%= author["username"]%>
+    <%end%>
+  </div>
+  <br><br>
+<%end%>
