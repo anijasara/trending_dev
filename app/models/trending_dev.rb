@@ -1,12 +1,13 @@
 class TrendingDev < ApplicationRecord
   include HTTParty
-  # base_uri "https://github-trending-api.now.sh/repositories?language=javascript&since=weekly"
 
-  def get_trending_dev_data
-    self.class.get("https://github-trending-api.now.sh/repositories?language=javascript&since=weekly")
+  def get_trending_dev_data(params = nil)
+    language = params[:language] if params
+    frequency = params[:frequency] if params
+    self.class.get(Rails.application.secrets[:services][:trendingdev][:host]+"?language=#{language}&since=#{frequency}")
   end
 
-  def latest_trending_devs
-    get_trending_dev_data.parsed_response
+  def latest_trending_devs(params = nil)
+    get_trending_dev_data(params).parsed_response
   end
 end

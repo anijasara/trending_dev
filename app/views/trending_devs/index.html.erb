@@ -1,3 +1,17 @@
-<h1>TrendingDevs</h1>
+<p>
+  <%= form_tag trending_devs_search_languages_path do %>
+    <div>
+      Language : <%= text_field_tag :language %>
+    </div>
+    <div>
+      Frequency : <%= text_field_tag :frequency %>
+    </div>
+    <div class="actions">
+      <%= submit_tag "Submit", :name => nil %>
+    </div>
+  <% end %>
+</p>
+
+<h1>TrendingDevs!!</h1>
 
 <p><%=@trending_devs %></p>
