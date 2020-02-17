@@ -10,6 +10,11 @@ Manual
     Install gems with bundle install
     Run rails server in terminal
     
+ To run unit tests:
+ 
+ bundle exec rspec -> trending_dev_spec.rb & trending_devs_controller_spec.rb
+ 
+    
   TrendingDevsController is the base controller which handles the requests.
   
   TrendingDev is the model (app/models/trending_dev.rb) which hits the third party to get the json response.
