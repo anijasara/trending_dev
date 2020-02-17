@@ -32,3 +32,4 @@
 
 /config/secrets.yml
 /coverage
+/config/local_env.yml
