@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Ruby on Rails application which lists all trending developers in Github by hitting an external API.
 
-Things you may want to cover:
+Pushed the working application into Heroku, URL : https://lit-castle-05833.herokuapp.com/
 
-* Ruby version
+Manual
 
-* System dependencies
+    Clone the repository
+    Install gems with bundle install
+    Run rails server in terminal
+    
+  TrendingDevsController is the base controller which handles the requests.
+  
+  TrendingDev is the model (app/models/trending_dev.rb) which hits the third party to get the json response.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Cheers!
