@@ -13,5 +13,19 @@ Manual
   TrendingDevsController is the base controller which handles the requests.
   
   TrendingDev is the model (app/models/trending_dev.rb) which hits the third party to get the json response.
+  
+  Heroku Demo Application: https://lit-castle-05833.herokuapp.com/
+  
+  
+  All the trending developers irrespective of language and frequency is listed in the home page.
+  
+  If you want to search for specific language, given 2 text fields
+  
+  Give Language for eg: ruby  , in Language field
+  
+  and since value for eg: 'daily' in frequency field
+  
+  and click Submit to see your search results!!
+  
 
 Cheers!
